@@ -6,6 +6,22 @@
 \usage{
 testcov2(X, Y, a0 = 2, b0 = 2, gamma = 1)
 }
+\arguments{
+\item{X}{an \eqn{(n_1\times p)} data matrix where each row is an observation.}
+
+\item{Y}{an \eqn{(n_2\times p)} data matrix where each row is an observation.}
+
+\item{a0}{shape parameter for inverse-gamma prior.}
+
+\item{b0}{scale parameter for inverse-gamma prior.}
+
+\item{gamma}{non-negative variance scaling parameter.}
+}
+\value{
+a named list containing: \describe{
+\item{log.BF.mat}{a \eqn{(p\times p)} matrix of pairwise log Bayes factors.}
+}
+}
 \description{
 Two-Sample Covariance Test
 }

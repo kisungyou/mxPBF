@@ -1,5 +1,14 @@
 #' Two-Sample Covariance Test
 #'
+#' @param X an \eqn{(n_1\times p)} data matrix where each row is an observation.
+#' @param Y an \eqn{(n_2\times p)} data matrix where each row is an observation.
+#' @param a0 shape parameter for inverse-gamma prior.
+#' @param b0 scale parameter for inverse-gamma prior.
+#' @param gamma non-negative variance scaling parameter.
+#'
+#' @return a named list containing: \describe{
+#' \item{log.BF.mat}{a \eqn{(p\times p)} matrix of pairwise log Bayes factors.}
+#' }
 #'
 #' @examples
 #' \dontrun{
